@@ -40,6 +40,6 @@ jobs:
               if: "startsWith(github.event.head_commit.message, 'release: ')"
               run: |
                   npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}"
-                  pnpm publish
+                  pnpm publish --access public
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
