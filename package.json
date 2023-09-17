@@ -10,6 +10,7 @@
     "description": "Utilities for handling commits under the Relational commit standard.",
     "type": "module",
     "main": "dist/index.cjs",
+    "license": "RLPL",
     "module": "dist/index.js",
     "packageManager": "pnpm@7.29.1",
     "keywords": [
