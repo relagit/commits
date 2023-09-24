@@ -13,6 +13,12 @@ This document describes the specification of the Relational Commits format.
 | `type`        |    ✅    | The type of commit. This can be `fix`, `feat` or any other type.      |
 | `description` |    ❌    | A short description of the commit.                                    |
 
+Commit messages **must** be written in the imperative present tense. For example, "Add pizza" instead of "Added pizza". 
+
+They must specify the scope of the commit, and the type of commit. The scope can be a file, directory, or a package. The type can be `fix`, `feat` or any other type.
+
+The commit message **may** be prefixed with a `!` to indicate a breaking change.
+
 # Examples
 
 The initial commit to the `main` branch.
