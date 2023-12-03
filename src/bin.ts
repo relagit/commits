@@ -4,17 +4,19 @@ import path from "path";
 
 import { parseCommitMessage } from "./lib/parse";
 import map from "./lib/map";
+import log from "./lib/log";
 
 const args = process.argv.slice(2);
 
 (async () => {
     switch (args[0]) {
         case undefined: {
-            console.log("Usage: relational <command> [args]");
+            console.log("Usage: rela <command> [args]");
             console.log();
             console.log("Commands:");
             console.log("  parse <message>  Parse a commit message");
             console.log("  map <path>       Generate a map of commit history");
+            console.log("  log              Log all the commits in the current directory");
 
             break;
         }
@@ -44,6 +46,9 @@ const args = process.argv.slice(2);
             map(path.join(process.cwd(), args[1]));
 
             break;
+        }
+        case "log": {
+            log(process.cwd());
         }
     }
 })();
