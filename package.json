@@ -32,7 +32,8 @@
         "./index.js": "./dist/index.js"
     },
     "bin": {
-        "relational": "dist/bin.js"
+        "relational": "dist/bin.js",
+        "rela": "dist/bin.js"
     },
     "scripts": {
         "build": "vite build",

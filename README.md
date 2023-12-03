@@ -24,8 +24,8 @@ A sensical, opinionated commit format.
 ```bash
 $ pnpm add @relagit/commits -g
 
-$ relational
-Usage: relational <command> [args]
+$ rela
+Usage: rela <command> [args]
 
 Commands:
   parse <message>  Parse a commit message
